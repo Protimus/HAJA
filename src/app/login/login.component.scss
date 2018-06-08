@@ -1,0 +1,110 @@
+@import url(https://fonts.googleapis.com/css?family=Skranji);
+
+$topnav-background-color: #222;
+:host {
+    display: block;
+}
+
+.login-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+1,d6d6d6+100 */
+        background: rgb(255,255,255); /* Old browsers */
+        background: -moz-linear-gradient(top, rgba(255,255,255,1) 1%, rgba(214,214,214,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(255,255,255,1) 1%,rgba(214,214,214,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(255,255,255,1) 1%,rgba(214,214,214,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d6d6d6',GradientType=0 ); /* IE6-9 */
+    text-align: center;
+    color: #fff;
+    padding: 3em;
+    .col-lg-4 {
+        padding: 0;
+    }
+    .input-lg {
+        height: 46px;
+        padding: 10px 16px;
+        font-size: 18px;
+        line-height: 1.3333333;
+        border-radius: 0;
+    }
+    .input-underline {
+        background: 0 0;
+        border: none;
+        box-shadow: none;
+        border-bottom: 2px solid #077299 !important;
+        color: #077299;
+        border-radius: 0;
+    }
+    .input-underline:focus {
+        border-bottom: 2px solid #044a64;
+        box-shadow: none;
+    }
+    .rounded-btn {
+        -webkit-border-radius: 50px;
+        border-radius: 50px;
+        color: rgba(255, 255, 255, 0.8);
+        /*background: $topnav-background-color;*/
+        background: #077299 !important;
+        border: 2px solid rgba(255, 255, 255, 0.8);
+        font-size: 18px;
+        line-height: 40px;
+        padding: 0 25px;
+    }
+    .rounded-btn:hover,
+    .rounded-btn:focus,
+    .rounded-btn:active,
+    .rounded-btn:visited {
+        color: #fff;
+        border: 2px solid;
+        outline: none;
+    }
+
+    h1 {
+        font-family: 'Skranji';
+        font-weight: 300;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 36px;
+        small {
+            color: rgba(255, 255, 255, 0.7);
+        }
+    }
+
+    .form-group {
+        padding: 8px 0;
+        input::-webkit-input-placeholder {
+            /*color: rgba(255, 255, 255, 0.6) !important;*/
+            color: #077299 !important;
+        }
+
+        input:-moz-placeholder {
+            /* Firefox 18-
+            color: rgba(255, 255, 255, 0.6) !important; */
+            color: #077299 !important;
+        }
+
+        input::-moz-placeholder {
+            /* Firefox 19+ 
+            color: rgba(255, 255, 255, 0.6) !important;*/
+            color: #077299 !important;
+        }
+
+        input:-ms-input-placeholder {
+            /*
+            color: rgba(255, 255, 255, 0.6) !important;*/
+            color: #077299 !important;
+        }
+    }
+    .form-content {
+        padding: 40px 0;
+    }
+    .user-avatar {
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        border: 2px solid #fff;
+    }
+}

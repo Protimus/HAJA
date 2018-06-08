@@ -1,0 +1,24 @@
+<div class="login-page" [@routerTransition]>
+    <div class="row justify-content-md-center">
+        <div class="col-md-4">
+        	<img width="150px" src="assets/images/logo.png">
+            <form role="form">
+                <div class="form-content">
+                    <div class="form-group">
+                        <input type="text" class="form-control input-underline input-lg" id="" placeholder="Nome">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control input-underline input-lg" id="" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control input-underline input-lg" id="" placeholder="Senha">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control input-underline input-lg" id="" placeholder="Confirmação da senha">
+                    </div>
+                </div>
+                <a class="btn rounded-btn" [routerLink]="['/dashboard']"> Cadastrar </a>&nbsp;
+            </form>
+        </div>
+    </div>
+</div>
