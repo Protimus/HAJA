@@ -1,6 +1,20 @@
 <div class="container">
-	<div class="pull-right">
-		<button class="btn btn-lg btn-primary" (click)='startProof()'>Iniciar Prova</button>&nbsp;
-		<button class="btn btn-lg btn-danger" (click)='stopProof()'>Concluir Prova</button>
+	<div class="container">
+		<div>
+			<h2 class="panel-text">Painel de Controle</h2>
+			<h5 class="">Informações Gráficas do Carro</h5>
+			<hr>
+			<div class="pull-right">
+				<button class="btn btn-lg btn-success" (click)='startProof()'><span class="btn-iniciar">Iniciar Prova</span></button>&nbsp;
+				<button class="btn btn-lg btn-danger" (click)='stopProof()'><span class="btn-concluir">Concluir Prova</span></button>
+			</div>
+		</div>
+	</div>
+	<div class="container col-md-6 pull-left">
+		<div [hidden]="!chart">
+			<h5 class="text-center velmedia">Temperatura</h5>
+			<hr>
+			<canvas id="canvas">{{ chart }}</canvas>
+		</div>
 	</div>
 </div>

@@ -6,14 +6,18 @@ import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DashboardComponent } from './dashboard.component';
 import { StatModule } from '../../shared';
 import { routerTransition } from '../../router.animations';
+import { HttpClientModule } from '@angular/common/http';
+import { TemperaturaService } from '../../temperatura.service';
 
 @NgModule({
     imports: [
         CommonModule,
         NgbCarouselModule.forRoot(),
         DashboardRoutingModule,
+        HttpClientModule,
         StatModule
     ],
+    providers: [TemperaturaService],
     declarations: [
         DashboardComponent
     ]
