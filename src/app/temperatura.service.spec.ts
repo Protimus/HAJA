@@ -1,8 +1,8 @@
 import { TestBed, inject } from '@angular/core/testing';
 
-import { VelmediaService } from './temperatura.service';
+import { TemperaturaService } from './temperatura.service';
 
-describe('VelmediaService', () => {
+describe('TemperaturaService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       providers: [TemperaturaService]
